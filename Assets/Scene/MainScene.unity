@@ -1000,7 +1000,7 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11400000, guid: f95e07e3d350bf748b0c42b453a69d2e, type: 2}
+  mAtlas: {fileID: 114642492172189950, guid: 951622c07e6d32d47a9b3df9b90e2dd0, type: 2}
   mSpriteName: Window
   mFillCenter: 1
 --- !u!1 &300303127
@@ -2396,7 +2396,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 827329817}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 51.00003, y: -0.99998474, z: 0}
+  m_LocalPosition: {x: 51, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1441606909}
@@ -3245,7 +3245,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1128925722}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 50.98218, y: -0.00033473969, z: 0}
+  m_LocalPosition: {x: 51, y: 0, z: 0}
   m_LocalScale: {x: 0.9989004, y: 0.9989004, z: 0.9989004}
   m_Children: []
   m_Father: {fileID: 1972746672}
