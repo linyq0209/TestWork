@@ -6,7 +6,6 @@ public class TestCreateController : PUIWindow {
 	private const string GUI_NAME = "test_create_panel";
 	public GameObject parentObj;
 	public GameObject prefabObj;
-
 	public static TestCreateController Create()
 	{
 		//根据名字获取到GameObject
@@ -21,6 +20,11 @@ public class TestCreateController : PUIWindow {
 	void Start()
 	{
 		CreateChildItem();
+	}
+
+	public void Test()
+	{
+		
 	}
 	//创建子物体
 	protected void CreateChildItem()

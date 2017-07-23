@@ -19,7 +19,6 @@ public class PUIWindow : PUIBaseWidget
 	protected bool mIsBaseWindow = false;
 
 	protected float mZValue = 0;
-	
 
 	protected override void InitImpl()
 	{

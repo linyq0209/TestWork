@@ -14,7 +14,8 @@ public class TestMainController : PUIWindow {
 	protected void OnClickBtn(GameObject go)
 	{
 		// 打开一个界面
-		TestCreateController.Create();
+		TestCreateController ret = TestCreateController.Create();
+		ret.Test();
 	}
 	
 }
