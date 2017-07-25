@@ -7,6 +7,7 @@ public class CharaterPanelController : PUIWindow {
 	public GameObject chParentObj;
 	public GameObject chPrefabObj;	
 	public GameObject chExitBtn;
+	public GameObject chHeadBtn;
 
 		
 	public static CharaterPanelController Create()
@@ -25,8 +26,10 @@ public class CharaterPanelController : PUIWindow {
 	void Start()
 	{                     
         UIEventListener.Get(chExitBtn).onClick = OnExitPanel;
-       
+        
         CreateChildItem();
+
+        UIEventListener.Get(chHeadBtn).onClick = OnExlain;
      } 
     
     
@@ -46,7 +49,13 @@ public class CharaterPanelController : PUIWindow {
 
 	}
 
-
+    protected void OnExlain(GameObject go)
+   {
+    
+    Debug.Log("1");
+   	ExlainController.Create();
+  
+   }
 
 }
 

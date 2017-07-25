@@ -7,6 +7,7 @@ public class ExlainController : PUIWindow {
    public GameObject exParentObj;
    public GameObject exPrefabObj;
    
+   
    public static ExlainController Create()
    {
     
@@ -19,27 +20,33 @@ public class ExlainController : PUIWindow {
     return ret;
    }
 
+   
+
    void Start()
    {
      
- 
-
-
+     CreateChildItem();
+     if(Input.GetButtonDown("Fire1"))
+     {
+     	Debug.Log("1");
+     	OnExit();
+     }
+     
    }
 
-    protected void ChildCreate(GameObject go)
+    protected void CreateChildItem()
     {
       for(int i=0;i<15;i++)
       {
          TestItemController.Create(exParentObj,exPrefabObj);
 
       }
-         exParentObj.GetComponent<UIGrid>().Reposition;
+         exParentObj.GetComponent<UIGrid>().Reposition();
     }
 
-     protected void OnExitPanel(GameObject go)
-     {
-     	OnExit();
-     }
+     // protected void OnExitPanel(GameObject go)
+     // {
+     // 	OnExit();
+     // }
 
 }
