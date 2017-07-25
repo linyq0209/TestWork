@@ -86,6 +86,8 @@ GameObject:
   - component: {fileID: 4421292134506370}
   - component: {fileID: 114465169422454636}
   - component: {fileID: 114418945749815532}
+  - component: {fileID: 114758888613672696}
+  - component: {fileID: 65298382407281038}
   m_Layer: 8
   m_Name: explain_panel
   m_TagString: Untagged
@@ -168,6 +170,18 @@ BoxCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1212414950273776}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65298382407281038
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1993325599880744}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -306,7 +320,6 @@ MonoBehaviour:
   isShowMask: 1
   exParentObj: {fileID: 1008253817204428}
   exPrefabObj: {fileID: 1212414950273776}
-  chHeadBtn: {fileID: 0}
 --- !u!114 &114465169422454636
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -345,7 +358,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3018
+  startingRenderQueue: 3014
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -431,3 +444,21 @@ MonoBehaviour:
   mAtlas: {fileID: 114968534017776576, guid: a122f534eae6b824e9aefc653b58c606, type: 2}
   mSpriteName: bg-phb4
   mFillCenter: 1
+--- !u!114 &114758888613672696
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1993325599880744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 618c8d135a750ab47bbb53111bed088e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openAnim: {fileID: 0}
+  closeAnim: {fileID: 0}
+  isWith3D: 0
+  isHidePre: 0
+  isClose3DUI: 0
+  isMaskTouchDown: 1
+  isShowMask: 1

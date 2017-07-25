@@ -6,7 +6,7 @@ public class ExlainController : PUIWindow {
    private const string GUI_NAME = "explain_panel";
    public GameObject exParentObj;
    public GameObject exPrefabObj;
-   
+   public Event anyKey;
    
    public static ExlainController Create()
    {
@@ -14,6 +14,8 @@ public class ExlainController : PUIWindow {
     GameObject obj = ResourceManager.GetInstance().GetPrefab(GUI_NAME);
 
     obj = GameObject.Instantiate(obj);
+
+    obj.transform.localPosition = new Vector3(-273,136,0);
 
     ExlainController ret = obj.GetComponent<ExlainController>();
 
@@ -26,17 +28,23 @@ public class ExlainController : PUIWindow {
    {
      
      CreateChildItem();
-     if(Input.GetButtonDown("Fire1"))
+     if(Input.GetMouseButton(0))
      {
-     	Debug.Log("1");
+     	Debug.Log("123");
      	OnExit();
      }
      
+     
+   }
+
+   void Updata()
+   {
+
    }
 
     protected void CreateChildItem()
     {
-      for(int i=0;i<15;i++)
+      for(int i=0;i<1;i++)
       {
          TestItemController.Create(exParentObj,exPrefabObj);
 
@@ -44,9 +52,6 @@ public class ExlainController : PUIWindow {
          exParentObj.GetComponent<UIGrid>().Reposition();
     }
 
-     // protected void OnExitPanel(GameObject go)
-     // {
-     // 	OnExit();
-     // }
+     
 
 }
