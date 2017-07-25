@@ -6,8 +6,7 @@ public class ExlainController : PUIWindow {
    private const string GUI_NAME = "explain_panel";
    public GameObject exParentObj;
    public GameObject exPrefabObj;
-   public Event anyKey;
-   
+   //public GameObject explain_panel;
    public static ExlainController Create()
    {
     
@@ -15,7 +14,7 @@ public class ExlainController : PUIWindow {
 
     obj = GameObject.Instantiate(obj);
 
-    obj.transform.localPosition = new Vector3(-273,136,0);
+    obj.transform.localPosition = new Vector3(-43,141,0);
 
     ExlainController ret = obj.GetComponent<ExlainController>();
 
@@ -23,35 +22,25 @@ public class ExlainController : PUIWindow {
    }
 
    
-
    void Start()
-   {
-     
-     CreateChildItem();
-     if(Input.GetMouseButton(0))
-     {
-     	Debug.Log("123");
-     	OnExit();
-     }
-     
-     
+   {    
+     CreateChildItem();   
+     //UIEventListener.Get(explain_panel).onClick =  OnExitPanel;           
    }
 
-   void Updata()
-   {
-
-   }
-
+   
     protected void CreateChildItem()
-    {
-      for(int i=0;i<1;i++)
-      {
+    {      
          TestItemController.Create(exParentObj,exPrefabObj);
-
-      }
+         
          exParentObj.GetComponent<UIGrid>().Reposition();
     }
 
-     
-
+    protected void OnExitPanel(GameObject go)
+	{
+		//OnExit();
+		Debug.Log("23456");
+	}
+    
+   
 }

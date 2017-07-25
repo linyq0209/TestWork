@@ -38,6 +38,8 @@ GameObject:
   - component: {fileID: 4707980627626500}
   - component: {fileID: 114634954800841462}
   - component: {fileID: 65975357555785630}
+  - component: {fileID: 114955818117514730}
+  - component: {fileID: 114397621376701322}
   m_Layer: 8
   m_Name: head
   m_TagString: Untagged
@@ -120,13 +122,14 @@ GameObject:
   - component: {fileID: 4588803445016826}
   - component: {fileID: 65421767262494954}
   - component: {fileID: 114951310501917862}
+  - component: {fileID: 114616203857887714}
   m_Layer: 8
   m_Name: chitem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1884998726347962
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,8 +312,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.24, y: 1, z: 1}
-  m_Center: {x: -110, y: 50, z: 0}
+  m_Size: {x: 78, y: 76, z: 1}
+  m_Center: {x: -89.88, y: 63.5, z: 0}
 --- !u!65 &65647273950644654
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -418,6 +421,19 @@ MonoBehaviour:
   scale: {x: 0, y: 0, z: 0}
   relativePositionOnReset: {x: 0, y: 0}
   centerOnChild: {fileID: 0}
+--- !u!114 &114397621376701322
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1011411839906826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02842fa4878db54f9587ff4de7d9f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollView: {fileID: 0}
+  draggablePanel: {fileID: 0}
 --- !u!114 &114456248968308086
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -493,6 +509,19 @@ MonoBehaviour:
   hideInactive: 1
   keepWithinPanel: 1
   sorted: 0
+--- !u!114 &114616203857887714
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1758099412982296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02842fa4878db54f9587ff4de7d9f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollView: {fileID: 0}
+  draggablePanel: {fileID: 0}
 --- !u!114 &114634954800841462
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -709,7 +738,6 @@ MonoBehaviour:
   chParentObj: {fileID: 1281364161549544}
   chPrefabObj: {fileID: 1758099412982296}
   chExitBtn: {fileID: 1032609442827068}
-  chHeadBtn: {fileID: 1011411839906826}
 --- !u!114 &114831115307289232
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -783,3 +811,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b65dec0c829f82469cbc961f3c6ba6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114955818117514730
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1011411839906826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fdca5042b1d12a4890ec1bd4f04290d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenTarget: {fileID: 0}
+  hover: {r: 0.88235295, g: 0.78431374, b: 0.5882353, a: 1}
+  pressed: {r: 0.7176471, g: 0.6392157, b: 0.48235294, a: 1}
+  disabledColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  duration: 0.2
+  dragHighlight: 0
+  hoverSprite: 
+  pressedSprite: 
+  disabledSprite: 
+  hoverSprite2D: {fileID: 0}
+  pressedSprite2D: {fileID: 0}
+  disabledSprite2D: {fileID: 0}
+  pixelSnap: 0
+  onClick:
+  - mTarget: {fileID: 114811879276379234}
+    mMethodName: OnExlain
+    mParameters:
+    - obj: {fileID: 1047120009195022, guid: a34a28c92656cfb4ca85d7ba6cc7bee3, type: 2}
+      field: 
+    oneShot: 0

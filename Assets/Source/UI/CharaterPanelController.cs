@@ -7,8 +7,7 @@ public class CharaterPanelController : PUIWindow {
 	public GameObject chParentObj;
 	public GameObject chPrefabObj;	
 	public GameObject chExitBtn;
-	public GameObject chHeadBtn;
-
+	
 		
 	public static CharaterPanelController Create()
 	{
@@ -19,43 +18,37 @@ public class CharaterPanelController : PUIWindow {
         obj.transform.localPosition = new Vector3(-579,37,0);
 
 		CharaterPanelController ret = obj.GetComponent<CharaterPanelController>();
+	    
 	    return ret; 
 	}
-    
     
 	void Start()
 	{                     
         UIEventListener.Get(chExitBtn).onClick = OnExitPanel;
         
         CreateChildItem();
-
-        UIEventListener.Get(chHeadBtn).onClick = OnExlain;
      } 
     
     
     protected void CreateChildItem()
     {
+
     	for(int i=0;i<15;i++)
     	{
     		TestItemController.Create(chParentObj,chPrefabObj);
+    		
     	}
-    	chParentObj.GetComponent<UIGrid>().Reposition();    	    	    	                
+    	chParentObj.GetComponent<UIGrid>().Reposition(); 
     }
 
     protected void OnExitPanel(GameObject go)
 	{
-		
 		OnExit();
-
 	}
 
-    protected void OnExlain(GameObject go)
-   {
-    
-    Debug.Log("1");
-   	ExlainController.Create();
-  
-   }
-
+    public void OnExlain(GameObject go)
+    {
+   	    ExlainController.Create();
+    }
 }
 
