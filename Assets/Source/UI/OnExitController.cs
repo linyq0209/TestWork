@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class OnExitController : PUIWindow {
 
-    public GameObject  explain_panel; 
+    public GameObject  btn; 
     
-    public void OnExitPanel(GameObject go)
+    public void onExitPanel(GameObject go)
     {
-    	
-    	explain_panel.SetActive(false);
-    	//Destroy(explain_panel);
+    	Destroy(gameObject);
+   
+
+
     }
 	
 	
