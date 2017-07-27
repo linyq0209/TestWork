@@ -15,7 +15,7 @@ public class CharaterPanelController : PUIWindow {
 		
 		obj = GameObject.Instantiate(obj);
 
-        obj.transform.localPosition = new Vector3(-579,37,0);
+        // obj.transform.localPosition = new Vector3(-579,37,0);
 
 		CharaterPanelController ret = obj.GetComponent<CharaterPanelController>();
 	    
@@ -46,9 +46,9 @@ public class CharaterPanelController : PUIWindow {
 		OnExit();
 	}
 
-    public void OnExlain(GameObject go)
-    {
-   	    ExlainController.Create();
-    }
+    // public void OnExlain(GameObject go)
+    // {
+   	//     ExlainController.Create();
+    // }
 }
 

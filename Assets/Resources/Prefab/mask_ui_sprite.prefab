@@ -57,7 +57,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 1, g: 1, b: 1, a: 0.322}
+  mColor: {r: 1, g: 1, b: 1, a: 0.803}
   mPivot: 4
   mWidth: 9000
   mHeight: 9000
@@ -67,7 +67,7 @@ MonoBehaviour:
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
-  mType: 0
+  mType: 1
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
@@ -80,8 +80,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 114209654955614854, guid: c0529f8381796df43b2a80efd21d0ac3, type: 2}
-  mSpriteName: bg-black
+  mAtlas: {fileID: 114522502379423030, guid: b00b20ffa71b1f944950d17acffbde90, type: 2}
+  mSpriteName: bg-bottom
   mFillCenter: 1
 --- !u!1001 &100100000
 Prefab:

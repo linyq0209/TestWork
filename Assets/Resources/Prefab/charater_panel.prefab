@@ -37,9 +37,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4707980627626500}
   - component: {fileID: 114634954800841462}
-  - component: {fileID: 65975357555785630}
-  - component: {fileID: 114955818117514730}
-  - component: {fileID: 114397621376701322}
   m_Layer: 8
   m_Name: head
   m_TagString: Untagged
@@ -172,7 +169,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1741368795902434}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 567, y: -25, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4959195490142944}
@@ -198,7 +195,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1281364161549544}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -121, y: 25, z: 0}
+  m_LocalPosition: {x: -208.8, y: 91.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4588803445016826}
@@ -227,7 +224,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1032609442827068}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 835, y: 138, z: 0}
+  m_LocalPosition: {x: 275.2, y: 164, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4959195490142944}
@@ -240,7 +237,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1884998726347962}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 563, y: -14, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4461127582002448}
@@ -255,7 +252,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1450676369726236}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -89, y: 67, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4588803445016826}
@@ -268,8 +265,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1011411839906826}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -89, y: 65, z: 0}
-  m_LocalScale: {x: 1.0625, y: 1.0504689, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4588803445016826}
   m_RootOrder: 1
@@ -281,7 +278,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1009964432544922}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -589, y: 37, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4252796202197448}
@@ -312,8 +309,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 78, y: 76, z: 1}
-  m_Center: {x: -89.88, y: 63.5, z: 0}
+  m_Size: {x: 91.64, y: 101.1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65647273950644654
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -325,18 +322,6 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 42, y: 44, z: 0}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &65975357555785630
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1011411839906826}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 78, y: 76, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114223713487260822
 MonoBehaviour:
@@ -389,8 +374,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 114103648315908198, guid: 4addbb5e0ffc36546ab95ee509bc553d, type: 2}
-  mSpriteName: if-n4a
+  mAtlas: {fileID: 114522502379423030, guid: b00b20ffa71b1f944950d17acffbde90, type: 2}
+  mSpriteName: bg2
   mFillCenter: 1
 --- !u!114 &114341697118394352
 MonoBehaviour:
@@ -421,19 +406,6 @@ MonoBehaviour:
   scale: {x: 0, y: 0, z: 0}
   relativePositionOnReset: {x: 0, y: 0}
   centerOnChild: {fileID: 0}
---- !u!114 &114397621376701322
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1011411839906826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f02842fa4878db54f9587ff4de7d9f2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scrollView: {fileID: 0}
-  draggablePanel: {fileID: 0}
 --- !u!114 &114456248968308086
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -466,7 +438,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 98
   mHeight: 102
-  mDepth: 5
+  mDepth: 6
   mMat: {fileID: 0}
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -706,13 +678,13 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3016
+  startingRenderQueue: 3010
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 3
   mClipRange: {x: 2, y: 1, z: 560, w: 306}
   mClipSoftness: {x: 4, y: 4}
-  mDepth: 9
+  mDepth: 7
   mSortingOrder: 0
   mSortingLayerName: 
   mClipOffset: {x: 0, y: 0}
@@ -789,13 +761,13 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3014
+  startingRenderQueue: 3009
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
   mClipRange: {x: 0, y: 0, z: 300, w: 200}
   mClipSoftness: {x: 4, y: 4}
-  mDepth: 7
+  mDepth: 6
   mSortingOrder: 0
   mSortingLayerName: 
   mClipOffset: {x: 0, y: 0}
@@ -811,34 +783,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b65dec0c829f82469cbc961f3c6ba6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114955818117514730
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1011411839906826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fdca5042b1d12a4890ec1bd4f04290d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenTarget: {fileID: 0}
-  hover: {r: 0.88235295, g: 0.78431374, b: 0.5882353, a: 1}
-  pressed: {r: 0.7176471, g: 0.6392157, b: 0.48235294, a: 1}
-  disabledColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  duration: 0.2
-  dragHighlight: 0
-  hoverSprite: 
-  pressedSprite: 
-  disabledSprite: 
-  hoverSprite2D: {fileID: 0}
-  pressedSprite2D: {fileID: 0}
-  disabledSprite2D: {fileID: 0}
-  pixelSnap: 0
-  onClick:
-  - mTarget: {fileID: 114811879276379234}
-    mMethodName: OnExlain
-    mParameters:
-    - obj: {fileID: 1047120009195022, guid: a34a28c92656cfb4ca85d7ba6cc7bee3, type: 2}
-      field: 
-    oneShot: 0

@@ -6,11 +6,11 @@ public class TestItemController : MonoBehaviour {
 
 	public static TestItemController Create(GameObject parent,GameObject child)
 	{
-        if(!child.GetComponent<UIEventListener>())
+        // if(!child.GetComponent<UIEventListener>())
         
-        {
-        	child.AddComponent<UIEventListener>();
-        }
+        // {
+        // 	child.AddComponent<UIEventListener>();
+        // }
 
 		GameObject obj = NGUITools.AddChild(parent,child);
                         
@@ -22,5 +22,14 @@ public class TestItemController : MonoBehaviour {
 		
 	}
 
+	void Start()
+	{
+		UIEventListener.Get(gameObject).onClick = OnClickItem;
+	}
+
+	protected void OnClickItem(GameObject go)
+	{
+		ExlainController.Create(gameObject);
+	}
 
 }
