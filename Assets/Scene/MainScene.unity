@@ -416,7 +416,7 @@ MonoBehaviour:
   mClipping: 0
   mClipRange: {x: 0, y: 0, z: 300, w: 200}
   mClipSoftness: {x: 4, y: 4}
-  mDepth: 5
+  mDepth: 1
   mSortingOrder: 0
   mSortingLayerName: 
   mClipOffset: {x: 0, y: 0}
@@ -453,12 +453,13 @@ MonoBehaviour:
   isHidePre: 0
   isClose3DUI: 0
   isMaskTouchDown: 1
-  isShowMask: 1
+  isShowMask: 0
   tweenBtn: {fileID: 852333874}
   tweenObj: {fileID: 1254509347}
   settingBtn: {fileID: 2069082416}
   bagBtn: {fileID: 730013010}
   chBtn: {fileID: 1946696038}
+  stageBtn: {fileID: 1261533733}
 --- !u!1 &36170051
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,36 +557,6 @@ MonoBehaviour:
   mMaxLineHeight: 0
   mLineWidth: 0
   mMultiline: 1
---- !u!1 &81859033
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1321964869276184, guid: 3082f9b42ddc13247bdea9c63b5d82f6,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 81859034}
-  m_Layer: 8
-  m_Name: NGUI Snapshot Point 36
-  m_TagString: EditorOnly
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &81859034
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4822933813067184, guid: 3082f9b42ddc13247bdea9c63b5d82f6,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 81859033}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 730013011}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &90288645
 GameObject:
   m_ObjectHideFlags: 0
@@ -779,40 +750,10 @@ Transform:
   m_GameObject: {fileID: 300303127}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.003502627, y: 0.003502627, z: 0.003502627}
+  m_LocalScale: {x: 0.0037313432, y: 0.0037313432, z: 0.0037313432}
   m_Children:
   - {fileID: 2120846100}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &305446945
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1364095112291488, guid: 3082f9b42ddc13247bdea9c63b5d82f6,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 305446946}
-  m_Layer: 8
-  m_Name: NGUI Snapshot Point 36
-  m_TagString: EditorOnly
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &305446946
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4309616043351920, guid: 3082f9b42ddc13247bdea9c63b5d82f6,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 305446945}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1946696039}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &331985046
@@ -1111,10 +1052,9 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 81859034}
+  m_Children: []
   m_Father: {fileID: 1455836474}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &730013012
 MonoBehaviour:
@@ -1694,6 +1634,7 @@ GameObject:
   - component: {fileID: 852333879}
   - component: {fileID: 852333878}
   - component: {fileID: 852333877}
+  - component: {fileID: 852333876}
   m_Layer: 8
   m_Name: Collet_Button
   m_TagString: Untagged
@@ -1714,6 +1655,21 @@ Transform:
   m_Father: {fileID: 1489412314}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &852333876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 852333874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d44bc69c2ca5f943b845318866dc1bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: 4ecb26c462ed72b4dbfba168ff91e2fa, type: 3}
+  trigger: 0
+  volume: 1
+  pitch: 1
 --- !u!114 &852333877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1783,7 +1739,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 96
   mHeight: 94
-  mDepth: 8
+  mDepth: 3
   mMat: {fileID: 0}
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
@@ -2369,10 +2325,9 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 292, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2028700136}
+  m_Children: []
   m_Father: {fileID: 1455836474}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1261533735
 MonoBehaviour:
@@ -2427,7 +2382,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 85, y: 90, z: 0}
+  m_Size: {x: 90, y: 95, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1261533738
 MonoBehaviour:
@@ -2460,14 +2415,14 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0.9411765, g: 0.9236832, b: 0.8927336, a: 1}
   mPivot: 4
-  mWidth: 85
-  mHeight: 90
+  mWidth: 90
+  mHeight: 95
   mDepth: 1
   mMat: {fileID: 0}
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 0.9444444
+  aspectRatio: 0.94736844
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -2658,10 +2613,10 @@ Transform:
   m_LocalPosition: {x: -92, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1261533734}
-  - {fileID: 1946696039}
   - {fileID: 730013011}
   - {fileID: 2069082417}
+  - {fileID: 1261533734}
+  - {fileID: 1946696039}
   m_Father: {fileID: 1730762010}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2736,7 +2691,7 @@ MonoBehaviour:
   rightAnchor:
     target: {fileID: 0}
     relative: 1
-    absolute: 0
+    absolute: 953
   bottomAnchor:
     target: {fileID: 0}
     relative: 0
@@ -2744,18 +2699,18 @@ MonoBehaviour:
   topAnchor:
     target: {fileID: 0}
     relative: 1
-    absolute: 0
+    absolute: 536
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 954
-  mHeight: 572
-  mDepth: 0
+  mWidth: 953
+  mHeight: 536
+  mDepth: 2
   mMat: {fileID: 0}
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.6678321
+  aspectRatio: 1.7779851
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -2769,39 +2724,9 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 114968534017776576, guid: a122f534eae6b824e9aefc653b58c606, type: 2}
-  mSpriteName: bg-smsd
+  mAtlas: {fileID: 114209654955614854, guid: c0529f8381796df43b2a80efd21d0ac3, type: 2}
+  mSpriteName: Stripes 2
   mFillCenter: 1
---- !u!1 &1526492741
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1528410718261722, guid: 3082f9b42ddc13247bdea9c63b5d82f6,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1526492742}
-  m_Layer: 8
-  m_Name: NGUI Snapshot Point 36
-  m_TagString: EditorOnly
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1526492742
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4495529738518786, guid: 3082f9b42ddc13247bdea9c63b5d82f6,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1526492741}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -42.99997, y: 229, z: 0}
-  m_LocalScale: {x: 0.99925005, y: 0.99925005, z: 0.99925005}
-  m_Children: []
-  m_Father: {fileID: 2069082417}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1607576373
 GameObject:
   m_ObjectHideFlags: 0
@@ -3113,10 +3038,9 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 438, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 305446946}
+  m_Children: []
   m_Father: {fileID: 1455836474}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1946696040
 MonoBehaviour:
@@ -3495,36 +3419,6 @@ MonoBehaviour:
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
   onClick: []
---- !u!1 &2028700135
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1906204568453810, guid: 3082f9b42ddc13247bdea9c63b5d82f6,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2028700136}
-  m_Layer: 8
-  m_Name: NGUI Snapshot Point 36
-  m_TagString: EditorOnly
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2028700136
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4119049130901708, guid: 3082f9b42ddc13247bdea9c63b5d82f6,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2028700135}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1261533734}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2036843763
 GameObject:
   m_ObjectHideFlags: 0
@@ -3652,10 +3546,9 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 146, y: -0, z: 0}
   m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
-  m_Children:
-  - {fileID: 1526492742}
+  m_Children: []
   m_Father: {fileID: 1455836474}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2069082418
 MonoBehaviour:

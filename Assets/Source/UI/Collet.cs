@@ -8,6 +8,7 @@ public class Collet : PUIWindow {
 	public GameObject settingBtn;
 	public GameObject bagBtn;
 	public GameObject chBtn;
+	public GameObject stageBtn;	
 	
 	protected TweenScale tween;
 	bool isOpen = false;
@@ -19,16 +20,11 @@ public class Collet : PUIWindow {
 		UIEventListener.Get(tweenBtn).onClick = OnTween;
 		UIEventListener.Get(settingBtn).onClick = OnSetting;    
 		UIEventListener.Get(chBtn).onClick = OnCharater;	
+		UIEventListener.Get(stageBtn).onClick = OnStage;
           	
 	}
 
-	void Updata(){
-		if(Input.GetButtonDown("Fire1"))
-       {
-       	Debug.Log("123456");
-       	//OnExit();
-       } 
-	}
+	
 
 	protected void OnBag(GameObject go)
 	{
@@ -43,6 +39,11 @@ public class Collet : PUIWindow {
     protected void OnCharater(GameObject go)
     {
     	CharaterPanelController.Create();
+    }
+
+    protected void OnStage(GameObject go)
+    {
+    	StagePanelController.Create();
     }
 
 	protected void OnTween(GameObject go)

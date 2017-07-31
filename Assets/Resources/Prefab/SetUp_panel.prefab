@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 114232285688983616}
   - component: {fileID: 114197667615471992}
   m_Layer: 8
-  m_Name: SetUp_panel
+  m_Name: setUp_panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
